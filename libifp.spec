@@ -8,6 +8,7 @@ Group:		Libraries
 Source0:	http://dl.sourceforge.net/ifp-driver/%{name}-%{version}.tar.gz
 # Source0-md5:	3b692cc224391b5714f5a8fbb8abf85b
 URL:		http://ifp-driver.sourceforge.net/libifp/
+BuildRequires:	doxygen
 BuildRequires:	libusb-devel
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -22,6 +23,7 @@ Summary:	The files needed for development of applications that use libifp
 Summary(pl):	Pliki potrzebne do tworzenia aplikacji u¿ywaj±cych libifp
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	libusb-devel
 
 %description devel
 Headers needed for development of applications that use libifp.
