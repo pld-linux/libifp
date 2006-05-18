@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/ifp-driver/%{name}-%{version}.tar.gz
 URL:		http://ifp-driver.sourceforge.net/libifp/
 BuildRequires:	doxygen
 BuildRequires:	libusb-devel
+BuildRequires:	qmake
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -76,7 +77,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libifp.so
 %{_libdir}/libifp.la
 %{_includedir}/*.h
-%{_mandir}/man3/ifp.h.3.gz
+%{_mandir}/man3/ifp.h.3*
 
 %files static
 %defattr(644,root,root,755)
