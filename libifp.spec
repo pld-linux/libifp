@@ -47,17 +47,18 @@ Statyczna biblioteka libifp.
 %setup -q
 
 %build
-%configure
-%{__make} -C src/
+%configure \
+	--with-libusb
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install -C src/ \
+%{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_mandir}/man3/
-install docs/man/man3/* $RPM_BUILD_ROOT%{_mandir}/man3/
+install -d $RPM_BUILD_ROOT%{_mandir}/man3
+install docs/man/man3/* $RPM_BUILD_ROOT%{_mandir}/man3
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -68,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README ChangeLog TODO
-#%attr(755,root,root) %{_bindir}/ifpline
+%attr(755,root,root) %{_bindir}/ifpline
 %attr(755,root,root) %{_libdir}/libifp.so.*.*.*
 
 %files devel
