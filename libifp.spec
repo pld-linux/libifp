@@ -1,5 +1,5 @@
 Summary:	iRiver driver library
-Summary(pl):	Biblioteka sterownika iRiver
+Summary(pl.UTF-8):   Biblioteka sterownika iRiver
 Name:		libifp
 Version:	1.0.0.2
 Release:	1
@@ -15,12 +15,12 @@ Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 An interface for iRiver's flash-based portable music players.
 
-%description -l pl
-Interfejs do opartych na flashu przeno∂nych odtwarzaczy muzyki iRiver.
+%description -l pl.UTF-8
+Interfejs do opartych na flashu przeno≈õnych odtwarzaczy muzyki iRiver.
 
 %package devel
 Summary:	The files needed for development of applications that use libifp
-Summary(pl):	Pliki potrzebne do tworzenia aplikacji uøywaj±cych libifp
+Summary(pl.UTF-8):   Pliki potrzebne do tworzenia aplikacji u≈ºywajƒÖcych libifp
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libusb-devel
@@ -28,19 +28,19 @@ Requires:	libusb-devel
 %description devel
 Headers needed for development of applications that use libifp.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe potrzebne do tworzenia aplikacji uøywaj±cych libifp.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe potrzebne do tworzenia aplikacji u≈ºywajƒÖcych libifp.
 
 %package static
 Summary:	Static libifp library
-Summary(pl):	Statyczna biblioteka libifp
+Summary(pl.UTF-8):   Statyczna biblioteka libifp
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libifp library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka libifp.
 
 %prep
