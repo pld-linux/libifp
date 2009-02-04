@@ -2,14 +2,14 @@ Summary:	iRiver driver library
 Summary(pl.UTF-8):	Biblioteka sterownika iRiver
 Name:		libifp
 Version:	1.0.0.2
-Release:	3
+Release:	4
 License:	GPL v2
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/ifp-driver/%{name}-%{version}.tar.gz
 # Source0-md5:	d4114794b13bd32b6b767e0870df6fc4
 URL:		http://ifp-driver.sourceforge.net/libifp/
 BuildRequires:	doxygen
-BuildRequires:	libusb-devel
+BuildRequires:	libusb-compat-devel
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -23,7 +23,7 @@ Summary:	The files needed for development of applications that use libifp
 Summary(pl.UTF-8):	Pliki potrzebne do tworzenia aplikacji używających libifp
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	libusb-devel
+Requires:	libusb-compat-devel
 
 %description devel
 Headers needed for development of applications that use libifp.
