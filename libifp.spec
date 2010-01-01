@@ -10,7 +10,7 @@ Source0:	http://dl.sourceforge.net/ifp-driver/%{name}-%{version}.tar.gz
 URL:		http://ifp-driver.sourceforge.net/libifp/
 BuildRequires:	doxygen
 BuildRequires:	libusb-compat-devel
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 An interface for iRiver's flash-based portable music players.
