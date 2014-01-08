@@ -71,6 +71,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog TODO
 %attr(755,root,root) %{_bindir}/ifpline
 %attr(755,root,root) %{_libdir}/libifp.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libifp.so.4
 
 %files devel
 %defattr(644,root,root,755)
